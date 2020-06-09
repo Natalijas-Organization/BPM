@@ -1,0 +1,14 @@
+ID: BPM
+_schema-version: "2.1"
+version: 0.0.1
+modules:
+  - name: bpm
+    type: com.sap.application.content
+    path: bpm
+    requires:
+      - name: workflow
+        parameters:
+          content-target: true
+resources:
+  - name: workflow
+    type: org.cloudfoundry.existing-service
